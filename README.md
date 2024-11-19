@@ -13,13 +13,13 @@ vscode + latexworkshop插件 + WSL环境
 
 若无需参考文献、超链接，可用一次编译
 ```sh
-rm -rf build && mkdir -p build && \
+mkdir -p build && \
 xelatex -output-directory=build main.tex
 ```
 
 输出参考文献等需要4次编译
 ```sh
-rm -rf build && mkdir -p build && \
+mkdir -p build && \
 xelatex -output-directory=build main.tex && \
 bibtex build/main && \
 xelatex -output-directory=build main.tex && \
